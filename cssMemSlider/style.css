@@ -48,3 +48,44 @@
 #slide4:checked~.slider-wrapper>.slider-container {
   transform: translateX(-75%);
 }
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider-controls-left {
+  padding-left: 1rem;
+  color: aliceblue;
+}
+
+.slider-text {
+  transform: scale(0);
+  transition: 0.3s;
+  font-size: 0;
+}
+
+#slide1:checked~.slider-controls>.slider-controls-left>.text1 {
+  transform: scale(1);
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+#slide2:checked~.slider-controls>.slider-controls-left>.text2 {
+  transform: scale(1);
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+#slide3:checked~.slider-controls>.slider-controls-left>.text3 {
+  transform: scale(1);
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+#slide4:checked~.slider-controls>.slider-controls-left>.text4 {
+  transform: scale(1);
+  transition: 0.3s;
+  font-size: 1rem;
+}
