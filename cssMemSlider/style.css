@@ -89,3 +89,73 @@
   transition: 0.3s;
   font-size: 1rem;
 }
+
+.slider-controls-right {
+  display: flex;
+}
+
+.slider-control-wrapper {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.slider-control1,
+.slider-control2,
+.slider-control3,
+.slider-control4 {
+  background-color: #4e4e53;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+}
+
+#slide1:checked~.slider-controls>.slider-controls-right .slider-control1 {
+  background-color: transparent;
+  border: 1px solid aliceblue;
+}
+
+#slide1:checked~.slider-controls>.slider-controls-right .slider-control-wrapper:hover>.slider-control1 {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+}
+
+#slide2:checked~.slider-controls>.slider-controls-right .slider-control2 {
+  background-color: transparent;
+  border: 1px solid aliceblue;
+}
+
+#slide2:checked~.slider-controls>.slider-controls-right .slider-control-wrapper:hover>.slider-control2 {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+}
+
+#slide3:checked~.slider-controls>.slider-controls-right .slider-control3 {
+  background-color: transparent;
+  border: 1px solid aliceblue;
+}
+
+#slide3:checked~.slider-controls>.slider-controls-right .slider-control-wrapper:hover>.slider-control3 {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+}
+
+#slide4:checked~.slider-controls>.slider-controls-right .slider-control4 {
+  background-color: transparent;
+  border: 1px solid aliceblue;
+}
+
+#slide4:checked~.slider-controls>.slider-controls-right .slider-control-wrapper:hover>.slider-control4 {
+  background-color: transparent;
+  border: 2px solid aliceblue;
+}
+
+.slider-control-wrapper:hover>.slider-control1,
+.slider-control-wrapper:hover>.slider-control2,
+.slider-control-wrapper:hover>.slider-control3,
+.slider-control-wrapper:hover>.slider-control4 {
+  background-color: aliceblue;
+}
